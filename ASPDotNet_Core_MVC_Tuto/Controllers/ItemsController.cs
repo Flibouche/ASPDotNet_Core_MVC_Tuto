@@ -10,5 +10,10 @@ namespace ASPDotNet_Core_MVC_Tuto.Controllers
             var item = new Item() { Name = "keyboard" };
             return View(item);
         }
+
+        public IActionResult Edit(int id)
+        {
+            return Content("id= " + id);
+        }
     }
 }
